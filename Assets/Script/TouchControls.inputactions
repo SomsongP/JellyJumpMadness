@@ -6,13 +6,22 @@
             "id": "49555bb8-404f-4b0b-bd33-e9c7c5b6d21e",
             "actions": [
                 {
-                    "name": "TouchInput",
+                    "name": "TouchPress",
                     "type": "Button",
                     "id": "b1c70f4b-3d8b-4146-8c4a-a5b79c0ebcc8",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "TouchPosition",
+                    "type": "Value",
+                    "id": "0daa0504-005c-424e-83f3-c04a4484e4e7",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -23,7 +32,29 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "TouchInput",
+                    "action": "TouchPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "88b62a5b-b548-4ddc-bc09-aebc409f6bb6",
+                    "path": "<Touchscreen>/Hold",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f2eed184-6bb8-4b2c-840a-9633b645fc96",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPosition",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
